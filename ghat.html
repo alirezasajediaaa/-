@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8">
+  <title>ورود</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      text-align: center;
+      padding: 50px;
+      background-color: #f0f0f0;
+    }
+    #main-content {
+      display: none;
+      direction: ltr;
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      margin-top: 30px;
+    }
+    input[type="password"] {
+      padding: 10px;
+      font-size: 16px;
+      width: 200px;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      margin-top: 10px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>لطفاً رمز را وارد کنید:</h2>
+  <input type="password" id="passwordInput" placeholder="رمز عبور">
+  <br>
+  <button onclick="checkPassword()">ورود</button>
+
+  <div id="main-content">
+    <p>ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo2OU1VaWk3VkR3TXFoN0h6@4.158.72.200:443#%F0%9F%94%92%20%40Vpn_Click%20%F0%9F%87%AC%F0%9F%87%A7</p>
+    <p>ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpITEpIeXdKUVRTZk81THFnNTdIZmln@62.60.233.240:55548#%F0%9F%94%92%20SS-TCP-NA%20%F0%9F%87%B9%F0%9F%87%B7%20TR-62.60.233.240%3A55548</p>
+  </div>
+
+  <script>
+    function checkPassword() {
+      const password = document.getElementById('passwordInput').value;
+      if (password === '1122334455') {
+        document.getElementById('main-content').style.display = 'block';
+      } else {
+        alert('رمز اشتباه است!');
+      }
+    }
+  </script>
+
+</body>
+</html>
